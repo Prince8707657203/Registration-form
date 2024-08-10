@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Applicant Registration Form</h2>
+        <form id="registration-form">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="fathers-name">Father’s Name</label>
+                <input type="text" id="fathers-name" name="fathers-name" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="religion">Religion</label>
+                <select id="religion" name="religion" required>
+                    <option value="hindu">Hindu</option>
+                    <option value="muslim">Muslim</option>
+                    <option value="christian">Christian</option>
+                    <option value="sikh">Sikh</option>
+                </select>
+
+                <label for="caste">Caste Category</label>
+                <select id="caste" name="caste" required>
+                    <option value="general">General</option>
+                    <option value="obc">OBC</option>
+                    <option value="sc">SC</option>
+                    <option value="st">ST</option>
+                </select>
+
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address</legend>
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="india">India</option>
+                    <option value="japan">Japan</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="nepal">Nepal</option>
+                </select>
+
+                <label for="state">State</label>
+                <select id="state" name="state" required>
+                    <option value="up">Uttar Pradesh (UP)</option>
+                    <option value="mp">Madhya Pradesh (MP)</option>
+                    <option value="haryana">Haryana</option>
+                </select>
+
+                <label for="district">District</label>
+                <select id="district" name="district" required>
+                    <option value="rampur">Rampur</option>
+                    <option value="bareilly">Bareilly</option>
+                    <option value="sultanpur">Sultanpur</option>
+                    <option value="mbd">Moradabad (MBD)</option>
+                    <option value="noida">Noida</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+
+                <label for="pin">Pin Code</label>
+                <input type="text" id="pin" name="pin" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <input type="checkbox" id="highschool" name="education" value="highschool">
+                <label for="highschool">High School</label>
+
+                <input type="checkbox" id="intermediate" name="education" value="intermediate">
+                <label for="intermediate">Intermediate</label>
+
+                <input type="checkbox" id="graduation" name="education" value="graduation">
+                <label for="graduation">Graduation</label>
+
+                <input type="checkbox" id="postgraduation" name="education" value="postgraduation">
+                <label for="postgraduation">Post Graduation</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hobbies</legend>
+                <label>Playing Games</label>
+                <input type="text" id="hobby1" name="hobby1">
+
+                <label>Watch Movies</label>
+                <input type="text" id="hobby2" name="hobby2">
+            </fieldset>
+
+            <fieldset>
+                <legend>Photo</legend>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Signature</legend>
+                <input type="file" id="signature" name="signature" accept="image/*" required>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3>Submitted Data</h3>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Father's Name</th>
+                    <th>Date of Birth</th>
+                    <th>Religion</th>
+                    <th>Caste</th>
+                    <th>Gender</th>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>District</th>
+                    <th>Pin Code</th>
+                    <th>Address</th>
+                    <th>Education</th>
+                    <th>Hobbies</th>
+                    <th>Photo</th>
+                    <th>Signature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
